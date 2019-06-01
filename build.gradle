@@ -1,0 +1,17 @@
+plugins { id 'org.jetbrains.kotlin.jvm' version '1.3.21' }
+
+group 'Adjourn'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+    compile 'net.dv8tion:JDA:4.ALPHA.0_91'
+    compile 'com.jcraft:jsch:0.1.55'
+}
+
+compileKotlin { kotlinOptions.jvmTarget = "1.8" }
